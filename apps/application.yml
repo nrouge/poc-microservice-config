@@ -1,0 +1,9 @@
+server.port: 0
+eureka:
+  instance:
+    instanceId: ${spring.application.name}
+  client:
+    serviceUrl:
+      defaultZone: ${DISCOVERY_SERVER_URL}
+# Actuator
+management.context-path: /manage
