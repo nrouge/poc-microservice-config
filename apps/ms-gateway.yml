@@ -2,6 +2,6 @@ server.port: 8080
 zuul:
   ignoredServices: '*'
   routes:
-    customer:
-      serviceId: ms-customer
-      path: /customers/**
+    ms-customer:
+      path: /ms-customer/**
+      stripPrefix: true
